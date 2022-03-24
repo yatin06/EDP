@@ -1,0 +1,30 @@
+WAP to change the intensity of the given LEDs for the sequence 35214 in for 
+both forward and reverse order.
+
+
+
+
+void setup()
+{
+ for(int i=9;i<=13;i++)
+ {
+ pinMode(i, OUTPUT);
+ } 
+}
+int arr[10]={3,5,6,10,11,11,10,6,5,3};
+void loop()
+{
+ for(int i=0;i<=9;i++)
+ {
+ for(int j=0;j<=255;j++)
+ {
+ analogWrite(arr[i], j);
+ delay(10);
+ }
+ for(int j=255;j>=0;j--)
+ {
+ analogWrite(arr[i], j);
+ delay(10);
+ }
+ }
+}
