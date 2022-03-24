@@ -1,0 +1,37 @@
+## WAP to print the following pattern ************* for Roll No., Name,Branch
+
+
+void setup()
+{
+Serial.begin(9600);
+}
+void loop()
+{ 
+ for(int i=1;i<=25;i++){ Serial.print("*"); delay(100);
+}
+Serial.println(" ");
+Serial.println("Roll No: 102003774
+delay(100);
+for(int i=1;i<=25;i++)
+{ 
+ Serial.print("*"); delay(100);
+}
+Serial.println(" ");
+Serial.println("Name: yatin
+delay(100);
+for(int i=1;i<=25;i++)
+{ 
+ Serial.print("*");
+ delay(100);
+}
+Serial.println(" ");
+Serial.println("Branch:COE");
+delay(100);
+for(int i=1;i<=35;i++)
+{
+ Serial.print("*"); delay(100);
+}
+exit(0);
+}
+
+
